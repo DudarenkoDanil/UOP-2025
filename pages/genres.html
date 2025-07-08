@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Library | Жанры</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../index.html">Modern Library</a>
+            </div>
+            <nav>
+                <a href="catalog.html">Каталог</a>
+                <a href="genres.html">Жанры</a>
+                <a href="about.html">О нас</a>
+                <a href="auth.html" class="button">Войти</a>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="genres-page">
+        <section class="genres">
+            <div class="section-title">
+                <h2>Популярные жанры</h2>
+                <p>Выберите интересующий вас жанр литературы</p>
+            </div>
+            <div class="genre-grid">
+                <a href="catalog.html?genre=fantasy" class="genre-card">
+                    <i class="fas fa-hat-wizard"></i>
+                    <h3>Фэнтези</h3>
+                    <p>1250 книг</p>
+                </a>
+                <a href="catalog.html?genre=detective" class="genre-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Детектив</h3>
+                    <p>980 книг</p>
+                </a>
+                <a href="catalog.html?genre=novel" class="genre-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Роман</h3>
+                    <p>1560 книг</p>
+                </a>
+                <a href="catalog.html?genre=sci-fi" class="genre-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Фантастика</h3>
+                    <p>870 книг</p>
+                </a>
+                <a href="catalog.html?genre=horror" class="genre-card">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Ужасы</h3>
+                    <p>430 книг</p>
+                </a>
+                <a href="catalog.html?genre=history" class="genre-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Исторический</h3>
+                    <p>720 книг</p>
+                </a>
+                <a href="catalog.html?genre=biography" class="genre-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Биографии</h3>
+                    <p>560 книг</p>
+                </a>
+                <a href="catalog.html?genre=science" class="genre-card">
+                    <i class="fas fa-atom"></i>
+                    <h3>Научные</h3>
+                    <p>320 книг</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="popular-genres">
+            <div class="section-title">
+                <h2>Популярное в жанрах</h2>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="fantasy">Фэнтези</button>
+                <button class="filter-btn" data-filter="classic">Классика</button>
+                <button class="filter-btn" data-filter="novel">Романы</button>
+            </div>
+            <div class="book-grid">
+                <div class="book-card" data-category="fantasy">
+                    <div class="book-cover">
+                        <img src="../img/Кольца.webp" alt="Властелин колец">
+                        <div class="book-overlay">
+                            <a href="#" class="button">Читать</a>
+                            <a href="#" class="button secondary">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Властелин колец</h3>
+                        <p>Дж. Р. Р. Толкин</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card" data-category="fantasy">
+                    <div class="book-cover">
+                        <img src="../img/Гарри Поттер и Тайная комната.webp" alt="Гарри Поттер">
+                        <div class="book-overlay">
+                            <a href="#" class="button">Читать</a>
+                            <a href="#" class="button secondary">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Гарри Поттер</h3>
+                        <p>Дж. К. Роулинг</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card" data-category="classic">
+                    <div class="book-cover">
+                        <img src="../img/1984.webp" alt="1984">
+                        <div class="book-overlay">
+                            <a href="#" class="button">Читать</a>
+                            <a href="#" class="button secondary">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>Джордж Оруэлл</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h3>О нас</h3>
+                <ul>
+                    <li><a href="about.html">О библиотеке</a></li>
+                    <li><a href="about.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Modern Library. Создано студентом Дударенко Д.А.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
